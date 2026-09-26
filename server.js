@@ -1,2 +1,2 @@
 
-console.log("CI/CD pipeline ")
+console.log("Hello CI/CD! Version 2");
