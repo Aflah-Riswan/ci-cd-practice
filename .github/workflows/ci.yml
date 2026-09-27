@@ -20,4 +20,7 @@ jobs:
         run: npm ci
 
       - name: Run application
-        run: node server.js
+        run: node server.js &
+      
+      - name: Check server
+        run: curl http://localhost:3000

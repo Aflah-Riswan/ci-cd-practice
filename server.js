@@ -1,2 +1,11 @@
+const express = require("express");
 
-console.log("Hello CI/CD Version 3");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Hello from CI/CD server!");
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
